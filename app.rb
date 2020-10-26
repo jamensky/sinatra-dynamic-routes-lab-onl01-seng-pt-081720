@@ -36,10 +36,10 @@ class App < Sinatra::Base
         @operation = -
       elsif @operation == "multiply"
         @operation = *
-      else 
+      else
         @operation = /
-      end 
-      
+      end
+
       @number1 = params[:number1]
       @number2 = params[:number2]
       binding.pry
