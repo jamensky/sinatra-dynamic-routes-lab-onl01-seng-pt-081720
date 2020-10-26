@@ -42,7 +42,7 @@ class App < Sinatra::Base
 
       @number1 = params[:number1]
       @number2 = params[:number2]
-      binding.pry
+      #binding.pry
 
       "#{@number1.to_i.method(@operation).(@number2.to_i)}"
    end
