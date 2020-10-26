@@ -31,13 +31,13 @@ class App < Sinatra::Base
 
       @operation = params[:operation]
       if @operation == "add"
-        @operation = +
+        @operation = "+"
       elsif @operation == "subtract"
-        @operation = -
+        @operation = "-"
       elsif @operation == "multiply"
-        @operation = *
+        @operation = "*"
       else
-        @operation = /
+        @operation = "/"
       end
 
       @number1 = params[:number1]
